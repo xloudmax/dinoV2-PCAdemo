@@ -1,0 +1,50 @@
+# requirements.txt
+# 项目所需的Python包及其版本
+
+# PyTorch及其相关库
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# 数据处理与科学计算
+numpy>=1.21.0
+pandas>=1.3.0
+scikit-learn>=1.0.0
+scipy>=1.7.0
+
+# 图像处理
+Pillow>=9.0.0
+opencv-python>=4.5.0
+
+# 可视化
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# 主成分分析
+scikit-learn>=1.0.0
+
+# 机器学习与深度学习工具
+timm>=0.6.0
+mmcv-full>=2.0.0
+mmsegmentation>=0.24.0
+
+# 自监督学习框架
+dinov2 @ git+https://github.com/facebookresearch/dinov2.git
+
+# 分布式训练与任务调度
+submitit>=1.3.0
+
+# 优化与加速
+xformers==0.0.18
+
+# 其他实用工具
+yacs>=0.1.8
+hydra-core>=1.1.0
+omegaconf>=2.1.0
+faiss-cpu>=1.7.2.post2  # 如果使用GPU版本，请安装 faiss-gpu
+requests>=2.26.0
+
+# 安装时忽略已存在的包版本冲突
+# 可以根据需要取消注释以下行
+# --use-feature=2020-resolver
+
